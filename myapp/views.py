@@ -5,6 +5,7 @@ from django.core.mail import send_mail
 # Create your views here.
 def landing(req):
     if req.method=="POST":
+        
         n =req.POST.get('name') 
         c = req.POST.get('contact') 
         i=req.FILES.get('image') 
